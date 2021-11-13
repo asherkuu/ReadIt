@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline'"
+    />
+    <title>ReadIt</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <button id="show-modal">+</button>
+      <input type="text" id="search" placeholder="검색" />
+    </header>
+
+    <main>
+      <p id="no-items">No Items</p>
+      <div id="items"></div>
+    </main>
+
+    <div id="modal">
+      <input type="text" id="url" placeholder="URL" />
+      <button id="add-item">추가</button>
+      <button id="close-button">삭제</button>
+    </div>
+
+    <script>
+      require("./app.js");
+    </script>
+  </body>
+</html>
